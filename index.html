@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Arsalan's Portfolio</title>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="src/jquery-2.1.4.min.js"></script>
+    <script src="bootstrap/js/npm.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css.map">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css.map">
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<div class="nav">
+    <div class="container">
+        <h1 class="header">Arsalan Syed</h1>
+        <a href="#">
+            <img id="fb" src="img/Facebook.jpeg" width="25" height="25">
+        </a>
+        <a href="#">
+            <img id="twitter" src="img/twitter.png" width="27" height="27">
+        </a>
+        <ul class="menu">
+            <li>
+                <a href="index.html" id="home">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About me</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="main">
+<div class="container-fluid">
+<div class="row">
+   <div class="rectangle col-md-4 " id="r1">
+        <a href="cv.pdf" download>
+            <h1>My Cv</h1>
+            <img src="img/doc.jpg" id="ph1">
+        </a>
+   </div>
+    <div class="rectangle col-md-4 " id="r2">
+
+        <a href="#" data-toggle="modal" data-target="#myModal">
+            <h1>Contact</h1>
+            <img src="img/phone.png" id="ph2">
+        </a>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button id="clbut" type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">My contact details</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Mobile: +46739514844</p>
+                        <p>Email: arsalansyed96@hotmail.com</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    </div>
+</div>
+</div>
+</div>
+
+<div class="support">
+<div class="container">
+<div class="row">
+    <div class="col-md-3 square" id="sq1">
+        <h3>Web Developement</h3>
+        <p>I am proficient in web developement tools with additional knowledge of the Bootstrap framework and Jquery libraries.</p>
+    </div>
+    <div class="col-md-3 square" id="sq2">
+        <h3>Programming</h3>
+        <p>I have experience with programming languages such as Java and Go. See my projects <a id="github" target="_blank" href="https://github.com/ArsalanS96">here at Github</a></p>
+    </div>
+    <div class="col-md-3 square" id="sq3">
+        <h3>Studying computer science</h3>
+        <p>I aspire to learn more about computers and the internet during my studies at KTH, soon I will learn MySQL, C and many other skills.</p>
+    </div>
+    <div class="col-md-3 square" id="sq4">
+        <h3>Mathematical skills</h3>
+        <p>I am also very passionate about mathematics and interested in how it can be applied in the fields of finance, electronics and encryption.</p>
+    </div>
+</div>
+</div>
+</div>
+
+
+<div class="footer">
+    <div class="container">
+        <p>Created by Arsalan Syed, 2015</p>
+    </div>
+
+</div>
+
+</body>
+
+</html>
+
+<script>
+
+    $(".square").on( "mouseover", function() {
+        $(".square").not(this).animate({"opacity": .3},200);         //.fadeOut(1000);
+        $("p").animate({
+            fontSize:"18px"
+        });
+    });
+
+    $(".square").on( "mouseleave", function() {
+        $(".square").animate({"opacity": 1},200);  //200       //.fadeOut(1000);
+        });
+
+
+
+
+
+</script>
